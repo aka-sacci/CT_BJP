@@ -47,6 +47,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.timer_att = new System.Windows.Forms.Timer(this.components);
+            this.imprime_Nucleo = new System.Drawing.Printing.PrintDocument();
+            this.button2 = new System.Windows.Forms.Button();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,10 +57,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(480, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(360, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(467, 42);
+            this.label1.Size = new System.Drawing.Size(368, 33);
             this.label1.TabIndex = 2;
             this.label1.Text = "Detalhes do núcleo familiar";
             // 
@@ -65,10 +67,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 81);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(8, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 29);
+            this.label2.Size = new System.Drawing.Size(105, 24);
             this.label2.TabIndex = 5;
             this.label2.Text = "Projenitora:";
             // 
@@ -76,10 +77,9 @@
             // 
             this.projenitora.AutoSize = true;
             this.projenitora.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.projenitora.Location = new System.Drawing.Point(147, 81);
-            this.projenitora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.projenitora.Location = new System.Drawing.Point(110, 66);
             this.projenitora.Name = "projenitora";
-            this.projenitora.Size = new System.Drawing.Size(165, 29);
+            this.projenitora.Size = new System.Drawing.Size(130, 24);
             this.projenitora.TabIndex = 6;
             this.projenitora.Text = "Nome da mãe";
             // 
@@ -87,10 +87,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 132);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(12, 107);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 29);
+            this.label3.Size = new System.Drawing.Size(80, 24);
             this.label3.TabIndex = 7;
             this.label3.Text = "Afiliados";
             // 
@@ -106,12 +105,11 @@
             this.dt,
             this.endereco,
             this.dt_anotacao});
-            this.dataGridView1.Location = new System.Drawing.Point(16, 165);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 134);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1684, 286);
+            this.dataGridView1.Size = new System.Drawing.Size(1263, 232);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDoubleClick);
             this.dataGridView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridView1_KeyDown);
@@ -167,10 +165,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1500, 458);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(1125, 391);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 28);
+            this.button1.Size = new System.Drawing.Size(130, 23);
             this.button1.TabIndex = 9;
             this.button1.Text = "Adicionar novo membro";
             this.button1.UseVisualStyleBackColor = true;
@@ -180,10 +177,9 @@
             // 
             this.Anotacao.AutoSize = true;
             this.Anotacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Anotacao.Location = new System.Drawing.Point(16, 507);
-            this.Anotacao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Anotacao.Location = new System.Drawing.Point(12, 412);
             this.Anotacao.Name = "Anotacao";
-            this.Anotacao.Size = new System.Drawing.Size(134, 25);
+            this.Anotacao.Size = new System.Drawing.Size(108, 20);
             this.Anotacao.TabIndex = 12;
             this.Anotacao.Text = "Nome da mãe";
             // 
@@ -191,19 +187,17 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(16, 478);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(12, 388);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(369, 29);
+            this.label5.Size = new System.Drawing.Size(290, 24);
             this.label5.TabIndex = 11;
             this.label5.Text = "Anotação sobre o núcleo familiar:";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(1528, 503);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(1146, 420);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(145, 28);
+            this.button3.Size = new System.Drawing.Size(109, 23);
             this.button3.TabIndex = 13;
             this.button3.Text = "Excluir núcleo familiar";
             this.button3.UseVisualStyleBackColor = true;
@@ -211,10 +205,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(1465, 114);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(1099, 93);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(208, 28);
+            this.button4.Size = new System.Drawing.Size(156, 23);
             this.button4.TabIndex = 14;
             this.button4.Text = "Editar detalhes da genitora";
             this.button4.UseVisualStyleBackColor = true;
@@ -226,12 +219,31 @@
             this.timer_att.Interval = 1000;
             this.timer_att.Tick += new System.EventHandler(this.timer_att_Tick);
             // 
+            // imprime_Nucleo
+            // 
+            this.imprime_Nucleo.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.imprime_Nucleo_PrintPage);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(1146, 449);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(109, 23);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Imprimir relatório";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
+            // 
             // Detalhes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1716, 609);
+            this.ClientSize = new System.Drawing.Size(1288, 501);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.Anotacao);
@@ -244,10 +256,9 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1734, 656);
-            this.MinimumSize = new System.Drawing.Size(1734, 656);
+            this.MaximumSize = new System.Drawing.Size(1304, 540);
+            this.MinimumSize = new System.Drawing.Size(1304, 540);
             this.Name = "Detalhes";
             this.Text = "Sistema de Gestão de Prontuários - Bom Jesus dos Perdões";
             this.Load += new System.EventHandler(this.Detalhes_Load);
@@ -276,5 +287,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Timer timer_att;
+        private System.Drawing.Printing.PrintDocument imprime_Nucleo;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PrintDialog printDialog1;
     }
 }

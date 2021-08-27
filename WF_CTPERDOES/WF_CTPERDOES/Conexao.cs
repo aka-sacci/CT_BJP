@@ -75,11 +75,14 @@ namespace WF_CTPERDOES
 
         public void open()
         {
-            if (conecta.State == ConnectionState.Closed)
-            {
-                conecta.ConnectionString = ("Server=localhost;Database=bd_ctperdoes;User=root;Pwd=''");
-                conecta.Open();
-            }
+           
+                if (conecta.State == ConnectionState.Closed)
+                {
+                    conecta.ConnectionString = ("Server=localhost;Database=bd_ctperdoes;User=root;Pwd=''");
+                    conecta.Open();
+                }
+            
+           
         }
 
         public void close()

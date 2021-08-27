@@ -11,6 +11,13 @@ The idea of ​​the project is to develop a system to computerize the storage 
 * 0.0.1
     * Work in progress
 
+* 1.0.0
+    * First release;
+
+* 2.0.0
+    * Added print function; Removed unnecessary forms; Search by name of parents or children added;
+   
+
 ## Meta
 
 Lucas Sacci – [@sascci](https://www.instagram.com/sascci/) – saccilucas@gmail.com

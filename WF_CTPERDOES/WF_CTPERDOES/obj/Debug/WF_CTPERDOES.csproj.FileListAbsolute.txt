@@ -53,3 +53,19 @@ C:\Users\PCNOVO22\Documents\git\CTPERDOES\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\WF
 C:\Users\PCNOVO22\Documents\git\CTPERDOES\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\WF_CTPERDOES.csproj.CopyComplete
 C:\Users\PCNOVO22\Documents\git\CTPERDOES\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\WF_CTPERDOES.exe
 C:\Users\PCNOVO22\Documents\git\CTPERDOES\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\WF_CTPERDOES.pdb
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\WF_CTPERDOES.csprojAssemblyReference.cache
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\WF_CTPERDOES.Adicionar_filiacao.resources
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\WF_CTPERDOES.Adicionar_mae.resources
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\WF_CTPERDOES.Detalhes.resources
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\WF_CTPERDOES.editar_filiacao.resources
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\WF_CTPERDOES.Editar_mae.resources
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\WF_CTPERDOES.Novo_nucleo.resources
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\WF_CTPERDOES.Properties.Resources.resources
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\WF_CTPERDOES.csproj.GenerateResource.cache
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\WF_CTPERDOES.csproj.CoreCompileInputs.cache
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\WF_CTPERDOES.csproj.CopyComplete
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\bin\Debug\Sistema de Prontuários - CTBJP.exe.config
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\bin\Debug\Sistema de Prontuários - CTBJP.exe
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\bin\Debug\Sistema de Prontuários - CTBJP.pdb
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\Sistema de Prontuários - CTBJP.exe
+C:\Users\PCNOVO22\Documents\git\CT_BJP\WF_CTPERDOES\WF_CTPERDOES\obj\Debug\Sistema de Prontuários - CTBJP.pdb

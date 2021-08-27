@@ -81,14 +81,6 @@ namespace WF_CTPERDOES
 
             }
 
-            comb.sql = "update tb01_genitoras set tb01_last_upd = 1 where tb01_seq = " + proj + "";
-
-            comb.open();
-
-            int lin = comb.Runsql();
-
-
-            comb.close();
 
         }
         private void Detalhes_Load(object sender, EventArgs e)
@@ -155,24 +147,6 @@ namespace WF_CTPERDOES
 
         private void timer_att_Tick(object sender, EventArgs e)
         {
-            Conexao comb = new Conexao();
-            int upd = 0;
-            comb.sql = "select tb01_last_upd from tb01_genitoras where tb01_seq = '" + proj + "';";
-            comb.open();
-            MySqlDataReader dados = comb.Execsql();
-            if (dados.HasRows)
-            {
-                while (dados.Read())
-                {
-                    upd = int.Parse(dados["tb01_last_upd"].ToString());
-                }
-                comb.close();
-            }
-            if (upd == 2) {
-
-                atualiza();
-            
-            }
 
         }
 
@@ -240,6 +214,9 @@ namespace WF_CTPERDOES
 
 
             //corpo
+            Font fonteAnt = new Font("Arial", 10, FontStyle.Bold, GraphicsUnit.Pixel);
+            Rectangle anot = new Rectangle(480, 205, 800, 0);
+            
             //coleta de dados para o corpo
             Rectangle titleName = new Rectangle(37, 220, 800, 0);
             StringFormat alignProj = new StringFormat();
@@ -307,6 +284,7 @@ namespace WF_CTPERDOES
 
 
             //PRINT DATA
+            e.Graphics.DrawString("*" + Anotacao.Text, fonteAnt, corSubtitle2, anot, alignProj);
             e.Graphics.DrawString("MÃE: " + projenitora.Text, fonteListaNegrito, corSubtitle2, titleName, alignProj);
        
             foreach (string nome in listaFilhos)
@@ -370,6 +348,7 @@ namespace WF_CTPERDOES
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            atualiza();
             printDialog1.AllowSomePages = true;
             printDialog1.ShowHelp = true;
             printDialog1.Document = imprime_Nucleo;
@@ -403,6 +382,11 @@ namespace WF_CTPERDOES
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            atualiza();
         }
     }
 }

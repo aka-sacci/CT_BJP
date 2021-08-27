@@ -16,6 +16,9 @@ The idea of ​​the project is to develop a system to computerize the storage 
 
 * 2.0.0
     * Added print function; Removed unnecessary forms; Search by name of parents or children added;
+
+* 2.1.0
+    * Autorefresh function removed; Print function upgrades;
    
 
 ## Meta

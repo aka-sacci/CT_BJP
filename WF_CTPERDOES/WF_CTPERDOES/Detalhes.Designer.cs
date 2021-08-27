@@ -50,6 +50,7 @@
             this.imprime_Nucleo = new System.Drawing.Printing.PrintDocument();
             this.button2 = new System.Windows.Forms.Button();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -165,7 +166,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1125, 391);
+            this.button1.Location = new System.Drawing.Point(1145, 446);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 23);
             this.button1.TabIndex = 9;
@@ -195,9 +196,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(1146, 420);
+            this.button3.Location = new System.Drawing.Point(1119, 98);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 23);
+            this.button3.Size = new System.Drawing.Size(156, 23);
             this.button3.TabIndex = 13;
             this.button3.Text = "Excluir núcleo familiar";
             this.button3.UseVisualStyleBackColor = true;
@@ -205,7 +206,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(1099, 93);
+            this.button4.Location = new System.Drawing.Point(1119, 69);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(156, 23);
             this.button4.TabIndex = 14;
@@ -225,9 +226,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1146, 449);
+            this.button2.Location = new System.Drawing.Point(1145, 388);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 23);
+            this.button2.Size = new System.Drawing.Size(130, 23);
             this.button2.TabIndex = 15;
             this.button2.Text = "Imprimir relatório";
             this.button2.UseVisualStyleBackColor = true;
@@ -237,12 +238,23 @@
             // 
             this.printDialog1.UseEXDialog = true;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(1145, 417);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(130, 23);
+            this.button5.TabIndex = 16;
+            this.button5.Text = "Atualizar dados";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Detalhes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1288, 501);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -290,5 +302,6 @@
         private System.Drawing.Printing.PrintDocument imprime_Nucleo;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Windows.Forms.Button button5;
     }
 }
